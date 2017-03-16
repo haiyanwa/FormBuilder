@@ -91,9 +91,8 @@ body {
 	</td></tr>
 	</table>
 	Items: total -- ${fn:length(block.items)} <br/>
-	<a href="${docroot}form/item.html?id=${item.id}">${item.name}</a>
 	<c:forEach items="${block.items}" var="item">
-		<a href="${docroot}form/item.html?id=${item.id}">${item.name}</a>
+		<a href="${docroot}form/item.html?id=${item.id}">${item.name}</a><br/>
 	</c:forEach>
 	
 </div>
